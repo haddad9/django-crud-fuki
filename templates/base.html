@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+                {% block title %}
+                {% endblock %}
+        </title>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}"/>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+        
+    </head>
+<body>
+    <nav class="navbar navbar-default" style="color: #7BBACF;">
+        <div class="container-fluid" style="color: #7BBACF;">
+            <a class="navbar-brand " href="#" style="font-family: DM Sans; color:#9BBA47;">FUKI IT FORCE</a>
+        </div>
+    </nav>
+    <div class="col-md-3"></div>
+    <div class="col-md-6 well">
+        <h3 style="color: #7BBACF; font-family: DM;">Matkulku</h3>
+        <hr style="border-top:1px dotted #000;"/>
+        {% block body %}
+        {% endblock %}
+    </div>
+
+</body>
+</html>

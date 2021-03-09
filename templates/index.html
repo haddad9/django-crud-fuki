@@ -1,0 +1,96 @@
+
+
+{% extends 'base.html' %}
+{% block title %}
+Matkulku
+{% endblock %}
+
+{% block body %}
+<h3 style="font-family: DM Sans; color: #9BBA47;">Tambah Mata Kuliah</h3>
+
+
+
+<div class="container justify-content-center" >
+    <form action="create" method="POST" style="color: ;">
+        {% csrf_token %}
+    
+        <div class="mb-3">
+          
+            
+          <label for="matkul" style="font-family: DM Sans; ">Nama Mata kuliah</label>           
+          <input type="text" name="matkul" class="form-control" style="width:70%;" required="required"/>
+    
+    
+        </div>
+    
+    
+        <div class="mb-3">
+        
+          <label for="dosen" style="font-family: DM Sans;">Dosen</label>
+          <input type="text" name="dosen" class="form-control" style="width:70%;" required="required"/>
+    
+        </div>
+    
+    
+    
+        <div class="mb-3">
+        
+            <label for="jumlah_sks" style="font-family: DM Sans">Jumlah SKS</label>
+            <input type="text" name="jumlah_sks" class="form-control" style="width:70%;" required="required"/>
+      
+          </div>
+    
+          <div class="mb-3">
+        
+            <label for="deskripsi" style="font-family: DM Sans">Deskripsi</label>
+            <input type="text" name="deskripsi" class="form-control" style="width:200px; height: 100px;" required="required"/>
+      
+          </div>
+    
+          <br>
+          <button type="submit" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-plus" style="font-family: DM Sans"></span> Tambah</button>
+    
+      </form>
+    
+</div>
+
+
+
+<br>
+<br>
+
+<br />
+<h3 style="color: #9BBA47; font-family: DM Sans;";>List Matkulku</h3>
+<table class="table table-bordered">
+    <thead >
+        <tr>
+            <th style="font-family: DM Sans;">No</th>
+            <th style="font-family: DM Sans;">Mata Kuliah</th>
+          
+            <th style="font-family: DM Sans;">Dosen</th>
+            <th style="font-family: DM Sans;"> Jumlah SKS </th>
+            <th style="font-family: DM Sans;">Deskripsi</th>
+
+
+            <th style="font-family: DM Sans;">Action</th>
+ 
+
+        </tr>
+    </thead>
+    <tbody>
+        {% for db in key %}
+        <tr>
+            <td style="font-family: DM Sans;">{{ db.id }}</td>
+            <td style="font-family: DM Sans;">{{ db.matkul }}</td>
+
+            <td style="font-family: DM Sans;">{{ db.dosen }}</td>
+            <td style="font-family: DM Sans;">{{ db.jumlah_sks }}</td>
+            <td style="font-family: DM Sans;">{{ db.deskripsi }}</td>
+
+
+            <td><center><a class="btn btn-sm btn-warning" href="update/{{ db.id }}" style="font-family: DM Sans;"><span class="glyphicon glyphicon-edit" ></span> Edit</a> <a class="btn btn-sm btn-danger" href="delete/{{ db.id }}"><span class="glyphicon glyphicon-trash"></span> Delete</a></center></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
