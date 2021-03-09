@@ -1,6 +1,6 @@
-# Django-CRUD
+# Simple Django-CRUD for FUKI Assignment
 
-Here, Django (base on Python) Create read update delete operation 
+this is simple CRUD web to create lists of subject in univeristy
 
 ## Installation
 
@@ -17,7 +17,7 @@ Step 3 : Run CRUD project
 ``` base 
 python manage.py runserver
 ```
-Step 4 : Run your browser (Best Chocie Google Chrome)
+Step 4 : Run your browser (Recommended using Google Chrome)
 ``` base 
 http://localhost
 ```
@@ -25,4 +25,6 @@ http://localhost
 ``` base 
 http://127.0.0.1
 ```
-#Simple CRUD for FUKI Assignment
+
+## Here is the deployed demo
+<a href=""> Demo </a>
