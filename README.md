@@ -25,7 +25,8 @@ http://localhost
 ``` base 
 http://127.0.0.1
 ```
+![alt text](https://github.com/haddad9/django-crud-fuki/blob/static/img/ss.png?raw=true)
 
-<img source="https://github.com/haddad9/django-crud-fuki/blob/master/static/img/ss.png"> </img>
+
 ## Here is the deployed demo
-<a href=""> Demo </a>
+<a href="https://django-fuki-production.herokuapp.com/"> Demo </a>
