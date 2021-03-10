@@ -26,5 +26,6 @@ http://localhost
 http://127.0.0.1
 ```
 
+<img source="https://github.com/haddad9/django-crud-fuki/blob/master/static/img/ss.png"> </img>
 ## Here is the deployed demo
 <a href=""> Demo </a>
