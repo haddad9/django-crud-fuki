@@ -25,7 +25,7 @@ http://localhost
 ``` base 
 http://127.0.0.1
 ```
-![alt text](https://github.com/haddad9/django-crud-fuki/blob/static/img/ss.png?raw=true)
+![Screenshot](https://github.com/haddad9/django-crud-fuki/blob/master/static/img/ss.png?raw=true)
 
 
 ## Here is the deployed demo
